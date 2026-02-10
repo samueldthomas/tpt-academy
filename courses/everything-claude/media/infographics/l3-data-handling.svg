@@ -1,0 +1,148 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 660" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="dhHeaderGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <filter id="dhShadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.08"/>
+    </filter>
+    <linearGradient id="freeGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#64748b"/>
+    </linearGradient>
+    <linearGradient id="proGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="teamGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#6d28d9"/>
+    </linearGradient>
+    <linearGradient id="entGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#059669"/>
+      <stop offset="100%" stop-color="#047857"/>
+    </linearGradient>
+    <symbol id="shieldYes" viewBox="0 0 20 20">
+      <path d="M10 1L3 4.5V9.5C3 14 6 17.5 10 19C14 17.5 17 14 17 9.5V4.5L10 1Z" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+      <path d="M7.5 10L9.5 12L13 8" fill="none" stroke="#16a34a" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+    <symbol id="shieldNo" viewBox="0 0 20 20">
+      <path d="M10 1L3 4.5V9.5C3 14 6 17.5 10 19C14 17.5 17 14 17 9.5V4.5L10 1Z" fill="#fee2e2" stroke="#dc2626" stroke-width="1.2"/>
+      <path d="M8 8L12 12M12 8L8 12" fill="none" stroke="#dc2626" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+    <symbol id="shieldPartial" viewBox="0 0 20 20">
+      <path d="M10 1L3 4.5V9.5C3 14 6 17.5 10 19C14 17.5 17 14 17 9.5V4.5L10 1Z" fill="#fef9c3" stroke="#ca8a04" stroke-width="1.2"/>
+      <path d="M7 10H13" fill="none" stroke="#ca8a04" stroke-width="1.8" stroke-linecap="round"/>
+    </symbol>
+  </defs>
+
+  <rect width="960" height="660" rx="12" fill="#f8fafc"/>
+
+  <rect width="960" height="72" rx="12" fill="url(#dhHeaderGrad)"/>
+  <rect y="60" width="960" height="12" fill="url(#dhHeaderGrad)"/>
+  <text x="480" y="34" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="700" letter-spacing="0.5">Data Handling by Plan Tier</text>
+  <text x="480" y="56" text-anchor="middle" fill="#94a3b8" font-size="13" font-weight="400">How Claude handles your data across subscription levels</text>
+
+  <g transform="translate(0, 88)">
+    <rect x="24" y="0" width="200" height="48" rx="8" fill="#f1f5f9"/>
+    <text x="124" y="28" text-anchor="middle" fill="#64748b" font-size="12" font-weight="600">FEATURE</text>
+    <rect x="236" y="0" width="168" height="48" rx="8" fill="url(#freeGrad)"/>
+    <text x="320" y="22" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">Free</text>
+    <text x="320" y="38" text-anchor="middle" fill="#e2e8f0" font-size="10">$0/month</text>
+    <rect x="416" y="0" width="168" height="48" rx="8" fill="url(#proGrad)"/>
+    <text x="500" y="22" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">Pro</text>
+    <text x="500" y="38" text-anchor="middle" fill="#bfdbfe" font-size="10">$20/month</text>
+    <rect x="596" y="0" width="168" height="48" rx="8" fill="url(#teamGrad)"/>
+    <text x="680" y="22" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">Team</text>
+    <text x="680" y="38" text-anchor="middle" fill="#ddd6fe" font-size="10">$25/user/month</text>
+    <rect x="776" y="0" width="168" height="48" rx="8" fill="url(#entGrad)"/>
+    <text x="860" y="22" text-anchor="middle" fill="#ffffff" font-size="14" font-weight="700">Enterprise</text>
+    <text x="860" y="38" text-anchor="middle" fill="#a7f3d0" font-size="10">Custom pricing</text>
+  </g>
+
+  <g transform="translate(0, 156)">
+    <rect x="24" y="0" width="920" height="80" rx="8" fill="#ffffff" filter="url(#dhShadow)"/>
+    <text x="44" y="34" fill="#1e293b" font-size="13" font-weight="600">Used for Training</text>
+    <text x="44" y="52" fill="#94a3b8" font-size="11">May conversations train future models?</text>
+    <use href="#shieldNo" x="304" y="16" width="32" height="32"/>
+    <text x="320" y="64" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="600">YES</text>
+    <use href="#shieldYes" x="484" y="16" width="32" height="32"/>
+    <text x="500" y="64" text-anchor="middle" fill="#16a34a" font-size="11" font-weight="600">NO*</text>
+    <use href="#shieldYes" x="664" y="16" width="32" height="32"/>
+    <text x="680" y="64" text-anchor="middle" fill="#16a34a" font-size="11" font-weight="600">NO</text>
+    <use href="#shieldYes" x="844" y="16" width="32" height="32"/>
+    <text x="860" y="64" text-anchor="middle" fill="#16a34a" font-size="11" font-weight="600">NO</text>
+  </g>
+
+  <g transform="translate(0, 250)">
+    <rect x="24" y="0" width="920" height="80" rx="8" fill="#ffffff" filter="url(#dhShadow)"/>
+    <text x="44" y="34" fill="#1e293b" font-size="13" font-weight="600">Delete Conversations</text>
+    <text x="44" y="52" fill="#94a3b8" font-size="11">Can users delete their conversation history?</text>
+    <use href="#shieldYes" x="304" y="16" width="32" height="32"/>
+    <text x="320" y="64" text-anchor="middle" fill="#16a34a" font-size="11" font-weight="600">YES</text>
+    <use href="#shieldYes" x="484" y="16" width="32" height="32"/>
+    <text x="500" y="64" text-anchor="middle" fill="#16a34a" font-size="11" font-weight="600">YES</text>
+    <use href="#shieldYes" x="664" y="16" width="32" height="32"/>
+    <text x="680" y="64" text-anchor="middle" fill="#16a34a" font-size="11" font-weight="600">YES</text>
+    <use href="#shieldYes" x="844" y="16" width="32" height="32"/>
+    <text x="860" y="64" text-anchor="middle" fill="#16a34a" font-size="11" font-weight="600">YES</text>
+  </g>
+
+  <g transform="translate(0, 344)">
+    <rect x="24" y="0" width="920" height="80" rx="8" fill="#ffffff" filter="url(#dhShadow)"/>
+    <text x="44" y="34" fill="#1e293b" font-size="13" font-weight="600">Admin Controls</text>
+    <text x="44" y="52" fill="#94a3b8" font-size="11">Organisation-level management and policies?</text>
+    <use href="#shieldNo" x="304" y="16" width="32" height="32"/>
+    <text x="320" y="64" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="600">NO</text>
+    <use href="#shieldNo" x="484" y="16" width="32" height="32"/>
+    <text x="500" y="64" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="600">NO</text>
+    <use href="#shieldYes" x="664" y="16" width="32" height="32"/>
+    <text x="680" y="64" text-anchor="middle" fill="#16a34a" font-size="11" font-weight="600">YES</text>
+    <use href="#shieldYes" x="844" y="16" width="32" height="32"/>
+    <text x="860" y="64" text-anchor="middle" fill="#16a34a" font-size="11" font-weight="600">YES</text>
+  </g>
+
+  <g transform="translate(0, 438)">
+    <rect x="24" y="0" width="920" height="80" rx="8" fill="#ffffff" filter="url(#dhShadow)"/>
+    <text x="44" y="34" fill="#1e293b" font-size="13" font-weight="600">Data Isolation</text>
+    <text x="44" y="52" fill="#94a3b8" font-size="11">Dedicated infrastructure and data segregation?</text>
+    <use href="#shieldNo" x="304" y="16" width="32" height="32"/>
+    <text x="320" y="64" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="600">NO</text>
+    <use href="#shieldNo" x="484" y="16" width="32" height="32"/>
+    <text x="500" y="64" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="600">NO</text>
+    <use href="#shieldNo" x="664" y="16" width="32" height="32"/>
+    <text x="680" y="64" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="600">NO</text>
+    <use href="#shieldYes" x="844" y="16" width="32" height="32"/>
+    <text x="860" y="64" text-anchor="middle" fill="#16a34a" font-size="11" font-weight="600">YES</text>
+  </g>
+
+  <g transform="translate(0, 532)">
+    <rect x="24" y="0" width="920" height="80" rx="8" fill="#ffffff" filter="url(#dhShadow)"/>
+    <text x="44" y="34" fill="#1e293b" font-size="13" font-weight="600">Full Compliance</text>
+    <text x="44" y="52" fill="#94a3b8" font-size="11">SOC 2, HIPAA eligibility, custom agreements?</text>
+    <use href="#shieldNo" x="304" y="16" width="32" height="32"/>
+    <text x="320" y="64" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="600">NO</text>
+    <use href="#shieldNo" x="484" y="16" width="32" height="32"/>
+    <text x="500" y="64" text-anchor="middle" fill="#dc2626" font-size="11" font-weight="600">NO</text>
+    <use href="#shieldPartial" x="664" y="16" width="32" height="32"/>
+    <text x="680" y="64" text-anchor="middle" fill="#ca8a04" font-size="11" font-weight="600">PARTIAL</text>
+    <use href="#shieldYes" x="844" y="16" width="32" height="32"/>
+    <text x="860" y="64" text-anchor="middle" fill="#16a34a" font-size="11" font-weight="600">YES</text>
+  </g>
+
+  <g transform="translate(24, 626)">
+    <rect width="920" height="24" rx="6" fill="#f1f5f9"/>
+    <text x="16" y="16" fill="#64748b" font-size="10" font-weight="600" letter-spacing="0.5">PRIVACY LEVEL</text>
+    <rect x="228" y="6" width="176" height="12" rx="6" fill="#e2e8f0"/>
+    <rect x="228" y="6" width="44" height="12" rx="6" fill="#94a3b8"/>
+    <rect x="408" y="6" width="176" height="12" rx="6" fill="#e2e8f0"/>
+    <rect x="408" y="6" width="110" height="12" rx="6" fill="#2563eb"/>
+    <rect x="588" y="6" width="176" height="12" rx="6" fill="#e2e8f0"/>
+    <rect x="588" y="6" width="140" height="12" rx="6" fill="#7c3aed"/>
+    <rect x="768" y="6" width="176" height="12" rx="6" fill="#e2e8f0"/>
+    <rect x="768" y="6" width="176" height="12" rx="6" fill="#059669"/>
+  </g>
+
+  <text x="480" y="656" text-anchor="middle" fill="#94a3b8" font-size="10">* Pro: Not used by default; can opt in. | TPT Academy — Everything Claude, Lesson 3</text>
+</svg>

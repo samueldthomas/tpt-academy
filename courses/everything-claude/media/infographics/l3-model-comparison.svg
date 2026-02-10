@@ -1,0 +1,149 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 620" font-family="'Segoe UI', system-ui, -apple-system, sans-serif">
+  <defs>
+    <linearGradient id="headerGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="100%" stop-color="#16213e"/>
+    </linearGradient>
+    <linearGradient id="opusGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7c3aed"/>
+      <stop offset="100%" stop-color="#5b21b6"/>
+    </linearGradient>
+    <linearGradient id="sonnetGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="haikuGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="100%" stop-color="#0e7490"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-4%" y="-2%" width="108%" height="108%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-opacity="0.10"/>
+    </filter>
+    <linearGradient id="spectrumGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0891b2"/>
+      <stop offset="50%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="960" height="620" rx="12" fill="#f8fafc"/>
+
+  <!-- Header -->
+  <rect width="960" height="72" rx="12" fill="url(#headerGrad)"/>
+  <rect y="60" width="960" height="12" fill="url(#headerGrad)"/>
+  <text x="480" y="34" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="700" letter-spacing="0.5">Claude Model Comparison</text>
+  <text x="480" y="56" text-anchor="middle" fill="#94a3b8" font-size="13" font-weight="400">Choosing the right model for the job</text>
+
+  <!-- Column 1: Opus -->
+  <g transform="translate(24, 88)">
+    <rect width="296" height="420" rx="10" fill="#ffffff" filter="url(#cardShadow)"/>
+    <rect width="296" height="6" rx="3" fill="url(#opusGrad)"/>
+    <rect x="78" y="22" width="140" height="32" rx="16" fill="#f5f3ff"/>
+    <text x="148" y="43" text-anchor="middle" fill="#7c3aed" font-size="14" font-weight="700">Opus 4.6</text>
+    <text x="148" y="76" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="600">Most Capable Model</text>
+    <line x1="48" y1="90" x2="248" y2="90" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="24" y="116" fill="#64748b" font-size="11" font-weight="600" letter-spacing="1">BEST FOR</text>
+    <circle cx="34" cy="140" r="4" fill="#7c3aed"/>
+    <text x="46" y="144" fill="#334155" font-size="12.5">Complex reasoning</text>
+    <circle cx="34" cy="164" r="4" fill="#7c3aed"/>
+    <text x="46" y="168" fill="#334155" font-size="12.5">Nuanced analysis</text>
+    <circle cx="34" cy="188" r="4" fill="#7c3aed"/>
+    <text x="46" y="192" fill="#334155" font-size="12.5">Long document review</text>
+    <circle cx="34" cy="212" r="4" fill="#7c3aed"/>
+    <text x="46" y="216" fill="#334155" font-size="12.5">Technical specifications</text>
+    <line x1="48" y1="236" x2="248" y2="236" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="24" y="262" fill="#64748b" font-size="11" font-weight="600" letter-spacing="1">AVAILABILITY</text>
+    <rect x="24" y="274" width="120" height="26" rx="13" fill="#fef3c7"/>
+    <text x="84" y="291" text-anchor="middle" fill="#92400e" font-size="11" font-weight="600">Pro &amp; Team only</text>
+    <line x1="48" y1="316" x2="248" y2="316" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="24" y="342" fill="#64748b" font-size="11" font-weight="600" letter-spacing="1">SPEED</text>
+    <rect x="24" y="354" width="248" height="8" rx="4" fill="#e2e8f0"/>
+    <rect x="24" y="354" width="82" height="8" rx="4" fill="#7c3aed"/>
+    <text x="24" y="380" fill="#94a3b8" font-size="10">Slowest</text>
+    <text x="24" y="404" fill="#64748b" font-size="11" font-weight="600" letter-spacing="1">CAPABILITY</text>
+    <rect x="24" y="396" width="248" height="8" rx="4" fill="#e2e8f0"/>
+    <rect x="24" y="396" width="248" height="8" rx="4" fill="#7c3aed"/>
+    <text x="272" y="380" text-anchor="end" fill="#7c3aed" font-size="10" font-weight="600">Deepest</text>
+  </g>
+
+  <!-- Column 2: Sonnet -->
+  <g transform="translate(332, 88)">
+    <rect width="296" height="420" rx="10" fill="#ffffff" filter="url(#cardShadow)"/>
+    <rect width="296" height="6" rx="3" fill="url(#sonnetGrad)"/>
+    <rect x="58" y="22" width="180" height="32" rx="16" fill="#eff6ff"/>
+    <text x="148" y="43" text-anchor="middle" fill="#2563eb" font-size="14" font-weight="700">Sonnet 4.5</text>
+    <text x="148" y="76" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="600">Balanced Everyday Model</text>
+    <rect x="88" y="84" width="120" height="20" rx="10" fill="#2563eb"/>
+    <text x="148" y="98" text-anchor="middle" fill="#ffffff" font-size="10" font-weight="600" letter-spacing="0.5">RECOMMENDED</text>
+    <line x1="48" y1="114" x2="248" y2="114" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="24" y="138" fill="#64748b" font-size="11" font-weight="600" letter-spacing="1">BEST FOR</text>
+    <circle cx="34" cy="162" r="4" fill="#2563eb"/>
+    <text x="46" y="166" fill="#334155" font-size="12.5">Writing &amp; drafting</text>
+    <circle cx="34" cy="186" r="4" fill="#2563eb"/>
+    <text x="46" y="190" fill="#334155" font-size="12.5">Summarising content</text>
+    <circle cx="34" cy="210" r="4" fill="#2563eb"/>
+    <text x="46" y="214" fill="#334155" font-size="12.5">Brainstorming ideas</text>
+    <circle cx="34" cy="234" r="4" fill="#2563eb"/>
+    <text x="46" y="238" fill="#334155" font-size="12.5">Explaining concepts</text>
+    <line x1="48" y1="258" x2="248" y2="258" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="24" y="282" fill="#64748b" font-size="11" font-weight="600" letter-spacing="1">AVAILABILITY</text>
+    <rect x="24" y="294" width="120" height="26" rx="13" fill="#dcfce7"/>
+    <text x="84" y="311" text-anchor="middle" fill="#166534" font-size="11" font-weight="600">All plans</text>
+    <line x1="48" y1="336" x2="248" y2="336" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="24" y="360" fill="#64748b" font-size="11" font-weight="600" letter-spacing="1">SPEED</text>
+    <rect x="24" y="372" width="248" height="8" rx="4" fill="#e2e8f0"/>
+    <rect x="24" y="372" width="165" height="8" rx="4" fill="#2563eb"/>
+    <text x="24" y="404" fill="#64748b" font-size="11" font-weight="600" letter-spacing="1">CAPABILITY</text>
+    <rect x="24" y="396" width="248" height="8" rx="4" fill="#e2e8f0"/>
+    <rect x="24" y="396" width="200" height="8" rx="4" fill="#2563eb"/>
+    <text x="148" y="380" text-anchor="middle" fill="#2563eb" font-size="10" font-weight="600">80% of tasks</text>
+  </g>
+
+  <!-- Column 3: Haiku -->
+  <g transform="translate(640, 88)">
+    <rect width="296" height="420" rx="10" fill="#ffffff" filter="url(#cardShadow)"/>
+    <rect width="296" height="6" rx="3" fill="url(#haikuGrad)"/>
+    <rect x="78" y="22" width="140" height="32" rx="16" fill="#ecfeff"/>
+    <text x="148" y="43" text-anchor="middle" fill="#0891b2" font-size="14" font-weight="700">Haiku 4.5</text>
+    <text x="148" y="76" text-anchor="middle" fill="#1e293b" font-size="13" font-weight="600">Fastest Model</text>
+    <line x1="48" y1="90" x2="248" y2="90" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="24" y="116" fill="#64748b" font-size="11" font-weight="600" letter-spacing="1">BEST FOR</text>
+    <circle cx="34" cy="140" r="4" fill="#0891b2"/>
+    <text x="46" y="144" fill="#334155" font-size="12.5">Quick tasks</text>
+    <circle cx="34" cy="164" r="4" fill="#0891b2"/>
+    <text x="46" y="168" fill="#334155" font-size="12.5">Reformatting text</text>
+    <circle cx="34" cy="188" r="4" fill="#0891b2"/>
+    <text x="46" y="192" fill="#334155" font-size="12.5">Simple lookups</text>
+    <circle cx="34" cy="212" r="4" fill="#0891b2"/>
+    <text x="46" y="216" fill="#334155" font-size="12.5">Fast iterations</text>
+    <line x1="48" y1="236" x2="248" y2="236" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="24" y="262" fill="#64748b" font-size="11" font-weight="600" letter-spacing="1">AVAILABILITY</text>
+    <rect x="24" y="274" width="120" height="26" rx="13" fill="#dcfce7"/>
+    <text x="84" y="291" text-anchor="middle" fill="#166534" font-size="11" font-weight="600">All plans</text>
+    <line x1="48" y1="316" x2="248" y2="316" stroke="#e2e8f0" stroke-width="1"/>
+    <text x="24" y="342" fill="#64748b" font-size="11" font-weight="600" letter-spacing="1">SPEED</text>
+    <rect x="24" y="354" width="248" height="8" rx="4" fill="#e2e8f0"/>
+    <rect x="24" y="354" width="248" height="8" rx="4" fill="#0891b2"/>
+    <text x="272" y="380" text-anchor="end" fill="#0891b2" font-size="10" font-weight="600">Fastest</text>
+    <text x="24" y="404" fill="#64748b" font-size="11" font-weight="600" letter-spacing="1">CAPABILITY</text>
+    <rect x="24" y="396" width="248" height="8" rx="4" fill="#e2e8f0"/>
+    <rect x="24" y="396" width="140" height="8" rx="4" fill="#0891b2"/>
+    <text x="24" y="380" fill="#94a3b8" font-size="10">Surprisingly capable</text>
+  </g>
+
+  <!-- Spectrum bar at bottom -->
+  <g transform="translate(24, 524)">
+    <rect width="912" height="44" rx="8" fill="#f1f5f9"/>
+    <text x="456" y="16" text-anchor="middle" fill="#64748b" font-size="10" font-weight="600" letter-spacing="1">SPEED VS CAPABILITY SPECTRUM</text>
+    <rect x="24" y="24" width="864" height="10" rx="5" fill="url(#spectrumGrad)"/>
+    <circle cx="850" cy="29" r="6" fill="#7c3aed" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="456" cy="29" r="6" fill="#2563eb" stroke="#ffffff" stroke-width="2"/>
+    <circle cx="62" cy="29" r="6" fill="#0891b2" stroke="#ffffff" stroke-width="2"/>
+    <text x="24" y="50" fill="#0891b2" font-size="10" font-weight="600">Fastest</text>
+    <text x="888" y="50" text-anchor="end" fill="#7c3aed" font-size="10" font-weight="600">Most Capable</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="480" y="604" text-anchor="middle" fill="#94a3b8" font-size="10">TPT Academy — Everything Claude, Lesson 3</text>
+</svg>
